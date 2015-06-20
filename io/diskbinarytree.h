@@ -1,8 +1,7 @@
 #ifndef DISKBINARYTREE_H
 #define DISKBINARYTREE_H
 #include "diskdatastructure.h"
-class DiskBinaryTree : public DiskDataStructure
-{
+class DiskBinaryTree : public DiskDataStructure{
 public:
     DiskBinaryTree();
 };
