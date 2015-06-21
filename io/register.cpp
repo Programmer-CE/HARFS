@@ -7,6 +7,18 @@ Register::Register(unsigned int pLength)
     _columns = new RowElement[pLength];
 }
 
+RowElement Register::primaryKey()
+{
+    return _columns[_primaryKey];
+}
+
+bool Register::setPrimaryKey(int index)
+{
+    if (index < 0 || index >= lenght)return false;
+    _primaryKey = index;
+    return false;
+}
+
 RowElement &Register::operator[](int index)
 {
     if (index < 0 || index >= lenght){

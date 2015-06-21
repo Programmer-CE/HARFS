@@ -6,9 +6,11 @@ class Register
 {
     RowElement * _columns;
     unsigned int lenght;
+    int _primaryKey;
 public:
     Register(unsigned int pLength);
     RowElement primaryKey();
+    bool setPrimaryKey(int index);
     RowElement &operator[] (int index);
     virtual ~Register();
 };
