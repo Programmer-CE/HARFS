@@ -6,7 +6,6 @@
 #include <QTcpSocket>
 #include "list/DoubleList.h"
 #include "controllernode.h"
-#include "test.h"
 #include <QMutex>
 class FServer : public QTcpServer
 {

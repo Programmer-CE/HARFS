@@ -1,5 +1,6 @@
 #include "schema.h"
 #include <QVariant>
+#include <string>
 Schema::Schema()
 {
     scheme = 0;
@@ -30,6 +31,7 @@ SchemeRow &Schema::operator[](int columnNum)
     }
     return scheme[columnNum];
 }
+
 
 unsigned int Schema::getLenght()
 {

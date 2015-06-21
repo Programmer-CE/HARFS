@@ -1,6 +1,5 @@
 #include "fserver.h"
 #include "iostream"
-#include "test.h"
 bool FServer::hasConnections()
 {
     return _connectors.getLenght() !=0;

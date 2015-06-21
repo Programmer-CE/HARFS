@@ -3,6 +3,7 @@
 
 StorageblockFacade::StorageblockFacade()
 {
+
 }
 
 StorageblockFacade *StorageblockFacade::getInstance()
@@ -33,4 +34,9 @@ QString StorageblockFacade::getAllStorageBlockOnJson()
 void StorageblockFacade::eraseStorageBlock(char pUniqueId[])
 {
     // borra el storage block
+}
+
+QString StorageblockFacade::createStorageBlock(QString pRaidType, QString pDataStructure, Schema *pScheme)
+{
+    return QString("uuuuuuuuuuuuuuuuuuuuuuuuCL4V3 S3CR3T4uuuuuuuuuuuuuuuuuuuuuuuu");
 }

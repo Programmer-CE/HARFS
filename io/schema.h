@@ -2,6 +2,7 @@
 #define SCHEMA_H
 #include "schemerow.h"
 #include "arrayindexoutbounds.h"
+#include "elementdontfounded.h"
 
 class Schema
 {
@@ -12,7 +13,7 @@ public:
     Schema();
     Schema(unsigned int numberOfColumns);
     bool setSchemaOverColumn(int columnNum, std::string columnName, unsigned int byteSize,int pType);
-    SchemeRow &operator[](int columnNum);
+    SchemeRow &operator[] (int columnNum);
     unsigned int getLenght();
     virtual ~Schema();
 };

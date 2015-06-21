@@ -20,6 +20,7 @@ public:
     bool isValidDataStructure(QString pDataStructure);
     QString getAllStorageBlockOnJson();
     void eraseStorageBlock(char pUniqueId[32]);
+    QString createStorageBlock(QString pRaidType, QString pDataStructure, Schema* pScheme);
 };
 
 #endif // STORAGEBLOCKFACADE_H
